@@ -1,0 +1,81 @@
+property(on, attribute(white, bus), attribute(none, street), box0, box3).
+property(has, attribute(none, bus), attribute(red, wheel), box0, box7).
+property(has, attribute(white, bus), attribute(none, wheel), box0, box7).
+property(has, attribute(none, bus), attribute(none, window), box0, box5).
+property(has, attribute(white, bus), attribute(none, window), box0, box5).
+property(on, attribute(white, bus), attribute(none, street), box0, box3).
+property(has, attribute(white, bus), attribute(black, tire), box0, box7).
+property(has, attribute(white, bus), attribute(none, wheel), box0, box7).
+property(has, attribute(none, train), attribute(none, front), box1, box1).
+property(has, attribute(none, train), attribute(none, front), box1, box1).
+property(on, attribute(none, train), attribute(none, road), box1, box3).
+property(has, attribute(none, train), attribute(none, front), box1, box1).
+property(has, attribute(none, train), attribute(none, window), box1, box5).
+property(has, attribute(none, train), attribute(none, car), box1, box8).
+property(has, attribute(none, train), attribute(none, wheel), box1, box7).
+property(has, attribute(none, train), attribute(white, car), box1, box8).
+property(on, attribute(none, car), attribute(none, bus), box8, box0).
+property(on, attribute(none, car), attribute(none, train), box8, box1).
+property(has, attribute(none, car), attribute(none, wheel), box8, box7).
+property(has, attribute(none, car), attribute(none, wheel), box8, box7).
+property(has, attribute(none, car), attribute(none, wheel), box8, box7).
+property(on, attribute(none, car), attribute(none, street), box8, box3).
+property(has, attribute(none, car), attribute(black, tire), box8, box7).
+property(on_car, attribute(none, car), attribute(none, car), box6, box2).
+property(has, attribute(none, road), attribute(red, car), box3, box6).
+property(in_front, attribute(none, tracks), attribute(none, train), box8, box1).
+property(has, attribute(none, road), attribute(red, car), box3, box6).
+property(has, attribute(none, road), attribute(red, car), box3, box6).
+property(has, attribute(none, car), attribute(none, window), box2, box4).
+property(has, attribute(none, road), attribute(red, car), box3, box6).
+property(has, attribute(none, street), attribute(black, wheel), box3, box7).
+property(has, attribute(none, car), attribute(none, wheel), box8, box7).
+property(parked_on, attribute(none, car), attribute(none, car), box6, box2).
+property(in_front, attribute(none, car), attribute(none, train), box7, box1).
+property(parked_on, attribute(none, car), attribute(none, street), box2, box3).
+property(on, attribute(none, car), attribute(none, street), box2, box3).
+property(has, attribute(none, car), attribute(none, wheel), box2, box4).
+property(on, attribute(none, car), attribute(none, street), box2, box3).
+property(has, attribute(none, car), attribute(black, tire), box2, box4).
+property(has, attribute(none, car), attribute(none, wheel), box2, box4).
+property(on, attribute(none, window), attribute(none, bus), box5, box0).
+property(on, attribute(none, window), attribute(none, train), box5, box1).
+property(on, attribute(none, wheel), attribute(none, front), box7, box1).
+property(on, attribute(none, tire), attribute(none, road), box5, box1).
+property(on, attribute(none, wheel), attribute(none, front), box7, box1).
+property(on, attribute(none, tire), attribute(none, road), box7, box3).
+property(on, attribute(none, wheel), attribute(black, car), box4, box2).
+property(on, attribute(none, tire), attribute(none, front), box7, box1).
+property(parked_on, attribute(none, car), attribute(none, car), box6, box2).
+property(in_front, attribute(none, car), attribute(none, train), box8, box1).
+property(on, attribute(none, car), attribute(none, street), box2, box3).
+property(on, attribute(none, car), attribute(none, street), box6, box3).
+property(has, attribute(none, car), attribute(black, tire), box2, box4).
+property(on, attribute(none, car), attribute(none, street), box2, box3).
+property(has, attribute(none, car), attribute(black, tire), box2, box4).
+property(has, attribute(none, car), attribute(none, wheel), box2, box4).
+property(on, attribute(none, wheel), attribute(none, bus), box7, box0).
+property(on, attribute(none, wheel), attribute(none, train), box7, box1).
+property(on, attribute(none, wheel), attribute(none, car), box7, box8).
+property(on, attribute(none, tire), attribute(none, road), box7, box3).
+property(on, attribute(none, wheel), attribute(red, car), box4, box6).
+property(on, attribute(none, tire), attribute(none, car), box4, box6).
+property(on, attribute(none, wheel), attribute(none, car), box4, box6).
+property(on, attribute(none, wheel), attribute(none, car), box4, box6).
+property(on, attribute(none, tire), attribute(none, bus), box7, box0).
+property(on, attribute(none, tire), attribute(none, train), box7, box1).
+property(on, attribute(none, tire), attribute(none, car), box7, box8).
+property(on, attribute(none, car), attribute(none, street), box8, box3).
+property(on, attribute(none, tire), attribute(red, car), box4, box6).
+property(on, attribute(none, tire), attribute(none, road), box7, box3).
+property(on, attribute(none, tire), attribute(none, car), box7, box8).
+property(on, attribute(none, tire), attribute(none, bus), box7, box0).
+property(box0, 111.5, 76.5, 179, 89).
+property(box1, 1.5, 1.5, 284, 216).
+property(box2, 441.5, 105.5, 63, 63).
+property(box3, 79.5, 36.5, 641, 181).
+property(box4, 409.5, 89.5, 63, 63).
+property(box5, 156.5, 99, 89, 44).
+property(box6, 361.5, 89.5, 63, 63).
+property(box7, 140.5, 131, 89, 44).
+property(box8, 121.5, 105.5, 63, 63).

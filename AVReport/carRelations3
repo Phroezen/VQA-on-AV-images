@@ -1,0 +1,164 @@
+property(has, attribute(none, car), attribute(white, car), box5, box4).
+property(has, attribute(none, road), attribute(none, street), box3, box0).
+property(has, attribute(none, road), attribute(none, street), box3, box0).
+property(has, attribute(none, car), attribute(black, wheel), box5, box6).
+property(has, attribute(none, truck), attribute(black, handle), box1, box6).
+property(has, attribute(none, road), attribute(none, none), box3, box6).
+property(on, attribute(none, bus), attribute(none, street), box1, box0).
+property(on, attribute(none, bus), attribute(none, street), box1, box0).
+property(on, attribute(none, bus), attribute(none, street), box1, box0).
+property(on, attribute(none, bus), attribute(red, bus), box1, box1).
+property(on, attribute(none, bus), attribute(black, car), box1, box6).
+property(has, attribute(none, bus), attribute(none, wheel), box1, box5).
+property(on, attribute(none, people), attribute(none, road), box4, box3).
+property(on, attribute(none, people), attribute(none, bus), box4, box1).
+property(on, attribute(none, people), attribute(none, road), box4, box3).
+property(on, attribute(none, people), attribute(none, bus), box4, box1).
+property(on, attribute(none, people), attribute(none, street), box4, box0).
+property(on, attribute(none, people), attribute(none, street), box4, box0).
+property(in, attribute(none, road), attribute(none, street), box3, box0).
+property(has, attribute(none, street), attribute(none, tire), box0, box6).
+property(has, attribute(none, street), attribute(white, line), box0, box0).
+property(has, attribute(none, street), attribute(white, sign), box0, box5).
+property(has, attribute(none, street), attribute(none, wheel), box0, box6).
+property(has, attribute(none, street), attribute(none, wheel), box0, box6).
+property(on, attribute(none, sign), attribute(none, road), box2, box3).
+property(on, attribute(none, sign), attribute(none, street), box2, box3).
+property(on, attribute(none, sign), attribute(none, street), box2, box3).
+property(on, attribute(none, sign), attribute(none, street), box2, box3).
+property(on, attribute(none, sign), attribute(black, car), box5, box6).
+property(on, attribute(black, sign), attribute(none, none), box5, box6).
+property(on, attribute(none, sign), attribute(none, road), box2, box3).
+property(on, attribute(none, sign), attribute(none, street), box2, box3).
+property(on, attribute(none, sign), attribute(none, street), box2, box3).
+property(on, attribute(none, sign), attribute(none, none), box2, box3).
+property(on, attribute(none, logo), attribute(red, bus), box4, box1).
+property(on, attribute(none, black), attribute(black, keyboard), box5, box6).
+property(on, attribute(none, wheel), attribute(none, road), box6, box3).
+property(on, attribute(none, wheel), attribute(red, bus), box6, box1).
+property(on, attribute(none, wheel), attribute(none, street), box6, box0).
+property(on, attribute(none, wheel), attribute(none, road), box6, box3).
+property(has, attribute(black, sign), attribute(none, none), box6, box5).
+property(has, attribute(black, tire), attribute(black, handle), box6, box6).
+property(box0, 223.5, 20.5, 497, 197).
+property(box1, 217.5, 9.5, 127, 150).
+property(box2, 1.5, 89.5, 55, 63).
+property(box3, 1.5, 79, 316, 138.5).
+property(box4, 249.5, 25.5, 63, 63).
+property(box5, 217.5, 41.5, 63, 63).
+property(box6, 233.5, 73.5, 63, 63).
+
+
+
+
+
+is_property(car, vehicle).
+is_property(truck, vehicle).
+is_property(suv, vehicle).
+is_property(minivan, vehicle).
+is_property(van, vehicle).
+is_property(ambulance, vehicle).
+is_property(bus, vehicle).
+is_property(motorcycle, vehicle).
+is_property(tractor, vehicle).
+is_property(train, vehicle).
+
+is_property(road, street).
+
+is_property(sedan, car).
+is_property(sports, car).
+is_property(coupe, car).
+is_property(station_wagon, car).
+is_property(hatchback, car).
+is_property(convertible, car).
+is_property(muscle_car, car).
+is_property(smart_car, car).
+is_property(taxi, car).
+is_property(police_car, car).
+is_property(hybrd_car, car).
+is_property(volkswagen_beetle,car).
+
+is_property(honda_accord, sedan).
+is_property(chevrolet_malibu, sedan).
+is_property(toyota_corolla, sedan).
+
+is_property(pickup_truck, truck).
+is_property(cement_truck, truck).
+is_property(fire_truck, truck).
+is_property(tow_truck, truck).
+is_property(semi_truck, truck).
+
+is_property(stop_sign,sign).
+is_property(yield_sign,sign).
+is_property(speed_limit_sign,sign).
+is_property(do_not_enter_sign,sign).
+is_property(no_parking_sign,sign).
+is_property(one_way_sign,sign).
+is_property(work_ahead_sign,sign).
+is_property(lane_ends_sign,sign).
+is_property(school_zone_sign,sign).
+
+is_property(red,color).
+is_property(blue,color).
+is_property(yellow,color).
+is_property(green,color).
+is_property(orange,color).
+is_property(purple,color).
+is_property(white,color).
+is_property(black,color).
+is_property(gray,color).
+is_property(cyan,color).
+
+is_part(window, vehicle).
+is_part(license_plate, vehicle).
+is_part(tire, vehicle).
+is_part(head_light, vehicle).
+is_part(bumper, vehicle).
+is_part(rear_light, vehicle).
+is_part(side_mirror, vehicle).
+is_part(door, vehicle).
+is_part(door_handle, vehicle).
+is_part(line, street).
+is_part(line, road).
+
+is_part2(window, V):-is_property(V,vehicle), V \= motorcycle.
+
+select_action(change_lane_right, T):- \+obstruction_right(T).
+
+select_action(change_lane_left, T):- \+obstruction_left(T).
+
+select_action(go_forward, T):- \+obstruction_forward(T).
+
+select_action(brake, T):- obstruction_forward(T),!.
+
+obstruction_forward(T):- property(_,attribute(_,B),_,A,_), property(A,X,Y,W,H), X+W > 300, X+W < 400, Y+H > 155, \+drivable_object(B), \+in(A,background).
+obstruction_forward(T):- property(_,attribute(_,B),_,A,_), property(A,X,Y,W,H), X > 300, X < 400, Y+H > 155, \+drivable_object(B), \+in(A,background).
+obstruction_forward(T):- property(_,_,attribute(_,B),_,A), property(A,X,Y,W,H), X+W > 300, X+W < 400, Y+H > 155, \+drivable_object(B), \+in(A,background).
+obstruction_forward(T):- property(_,_,attribute(_,B),_,A), property(A,X,Y,W,H), X > 300, X < 400, Y+H > 155, \+drivable_object(B), \+in(A,background).
+
+obstruction_left(T):- property(_,attribute(_,B),_,A,_), property(A,X,Y,W,H), X<200, Y+H > 155, \+drivable_object(B), \+in(A,background).
+obstruction_left(T):- property(_,_,attribute(_,B),_,A), property(A,X,Y,W,H), X+W<200, Y+H > 155, \+drivable_object(B), \+in(A,background).
+obstruction_right(T):- property(_,attribute(_,B),_,A,_), property(A,X,Y,W,H), X>500, Y+H > 155, \+drivable_object(B), \+in(A,background).
+obstruction_right(T):- property(_,_,attribute(_,B),_,A), property(A,X,Y,W,H), X+W>500, Y+H > 155, \+drivable_object(B), \+in(A,background).
+
+obstruction_right(T):- property(_,attribute(_,B),_,A,_), property(A,X,Y,W,H), X>500, Y+H > 155, \+drivable_object(B), \+in(A,background).
+obstruction_right(T):- property(_,_,attribute(_,B),_,A), property(A,X,Y,W,H), X+W>500, Y+H > 155, \+drivable_object(B), \+in(A,background).
+obstruction_right(T):- property(_,attribute(_,B),_,A,_), property(A,X,Y,W,H), X>500, Y+H > 155, \+drivable_object(B), \+in(A,background).
+obstruction_right(T):- property(_,_,attribute(_,B),_,A), property(A,X,Y,W,H), X+W>500, Y+H > 155, \+drivable_object(B), \+in(A,background).
+
+in(A,background):-property(in,_,attribute(_,background),A,_).
+in(A,background):-near(A,B), property(in,_,attribute(_,background),B,C).
+
+near(A,B):- property(in_front, attribute(_,A), attribute(_,B),_,_).
+near(A,B):- property(near, attribute(_,A), attribute(_,B),_,_).
+near(A,B):- property(in_front, attribute(_,B), attribute(_,A),_,_).
+near(A,B):- property(near, attribute(_,B), attribute(_,A),_,_).
+
+drivable_object(X):- X = street.
+drivable_object(X):- X = side.
+drivable_object(X):- X = sign, property(on, attribute(_,X), attribute(_,Y),_,_), Y=street.
+drivable_object(X):- X = sign, property(on, attribute(_,X), attribute(_,Y),_,_), is_property(Y,street).
+drivable_object(X):- is_property(X,street).
+drivable_object(X):- is_part(X,street).
+drivable_object(X):- is_part(X,Y), is_property(Y,street).
+

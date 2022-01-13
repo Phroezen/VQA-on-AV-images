@@ -1,0 +1,459 @@
+{
+  "opt": {
+    "output_dir": "imgs",
+    "num_to_draw": 10,
+    "final_nms_thresh": 0.3,
+    "use_cudnn": 0,
+    "text_size": 2,
+    "max_images": 100,
+    "gpu": 0,
+    "splits_json": "info/densecap_splits.json",
+    "vg_img_root_dir": "",
+    "checkpoint": "checkpoint_VGlongv3_tLSTM_MTL2_1e6.t7",
+    "num_proposals": 50,
+    "rpn_nms_thresh": 0.7,
+    "image_size": 720,
+    "input_image": "imgs/cars3/uu_000012.png",
+    "input_split": "",
+    "box_width": 2,
+    "input_dir": "",
+    "output_vis_dir": "vis/data",
+    "output_vis": 1
+  },
+  "results": [
+    {
+      "img_name": "uu_000012.png",
+      "captionBoxes": [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          8,
+          7
+        ],
+        [
+          8,
+          7
+        ],
+        [
+          8,
+          7
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          7
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          8,
+          7
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          7,
+          0
+        ]
+      ],
+      "scores": [
+        3.615296125412,
+        2.9345200061798,
+        1.9624416828156,
+        1.6681421995163,
+        1.1796171665192,
+        1.0242388248444,
+        0.72248393297195,
+        -0.03471552580595,
+        -1.350142121315
+      ],
+      "captions": [
+        "white bus on street",
+        "the bus has a red wheel",
+        "white bus has a wheel",
+        "the bus has window",
+        "white bus has a window",
+        "white bus on street",
+        "white bus has black tire",
+        "white bus has a wheel",
+        "the train has a front",
+        "the train has a front",
+        "the train on road",
+        "the train has a front",
+        "the train has window",
+        "the train has a car",
+        "the train has a wheel",
+        "the train has a a white car",
+        "the car on bus",
+        "the car on train",
+        "the car has a wheel",
+        "the car has a wheel",
+        "the car has a wheel",
+        "the car on street",
+        "the car has black tire",
+        "the car on parked car",
+        "the road has a red car",
+        "the tracks in front of train",
+        "the road has a red car",
+        "the road has a red car",
+        "the car has a window",
+        "the road has a red car",
+        "the street has black wheel",
+        "the car has a wheel",
+        "the car parked on front of car",
+        "the car in front of train",
+        "the car parked on street",
+        "the car on street",
+        "the car has a wheel",
+        "the car on street",
+        "the car has black tire",
+        "the car has a wheel",
+        "the window on bus",
+        "the window on train",
+        "the wheel on front",
+        "the tire on road",
+        "the wheel on front",
+        "the tire on road",
+        "the wheel on black car",
+        "the tire on front",
+        "the car parked on front of car",
+        "the car in front of train",
+        "the car on street",
+        "the car on street",
+        "the car has black tire",
+        "the car on street",
+        "the car has black tire",
+        "the car has a wheel",
+        "the wheel on bus",
+        "the wheel on train",
+        "the wheel on car",
+        "the tire on road",
+        "the wheel on red car",
+        "the tire on car",
+        "the wheel on car",
+        "the wheel on car",
+        "the tire on bus",
+        "the tire on train",
+        "the tire on car",
+        "the car on street",
+        "the tire on red car",
+        "the tire on road",
+        "the tire on car",
+        "the tire on bus"
+      ],
+      "boxes": [
+        [
+          111.5,
+          76.5,
+          179,
+          89
+        ],
+        [
+          1.5,
+          1.5,
+          284,
+          216
+        ],
+        [
+          441.5,
+          105.5,
+          63,
+          63
+        ],
+        [
+          79.5,
+          36.5,
+          641,
+          181
+        ],
+        [
+          409.5,
+          89.5,
+          63,
+          63
+        ],
+        [
+          156.5,
+          99,
+          89,
+          44
+        ],
+        [
+          361.5,
+          89.5,
+          63,
+          63
+        ],
+        [
+          140.5,
+          131,
+          89,
+          44
+        ],
+        [
+          121.5,
+          105.5,
+          63,
+          63
+        ]
+      ]
+    }
+  ]
+}

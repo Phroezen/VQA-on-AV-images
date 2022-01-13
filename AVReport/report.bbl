@@ -1,0 +1,25 @@
+\begin{thebibliography}{1}
+
+\bibitem{kim2019dense}
+D.-J. Kim, J.~Choi, T.-H. Oh, and I.~S. Kweon, ``Dense relational captioning:
+  Triple-stream networks for relationship-based captioning,'' 2019.
+
+\bibitem{kothawade2021autodiscern}
+S.~Kothawade, V.~Khandelwal, K.~Basu, H.~Wang, and G.~Gupta, ``Auto-discern:
+  Autonomous driving using common sense reasoning,'' 2021.
+
+\bibitem{inproceedings}
+K.~Basu, F.~Shakerin, and G.~Gupta, ``Aqua: Asp-based visual question
+  answering,'' pp.~57--72, 01 2020.
+
+\bibitem{spacy2}
+M.~Honnibal and I.~Montani, ``{spaCy 2}: Natural language understanding with
+  {B}loom embeddings, convolutional neural networks and incremental parsing.''
+  To appear, 2017.
+
+\bibitem{Fritsch2013ITSC}
+J.~Fritsch, T.~Kuehnl, and A.~Geiger, ``A new performance measure and
+  evaluation benchmark for road detection algorithms,'' in {\em International
+  Conference on Intelligent Transportation Systems (ITSC)}, 2013.
+
+\end{thebibliography}

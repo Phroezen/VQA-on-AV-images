@@ -1,0 +1,64 @@
+property(has, attribute(white, car), attribute(white, car), box0, box4).
+property(parked_on, attribute(white, car), attribute(none, bus), box0, box2).
+property(on, attribute(white, bus), attribute(none, street), box2, box3).
+property(has, attribute(white, car), attribute(none, wheel), box0, box4).
+property(has, attribute(white, car), attribute(none, window), box0, box5).
+property(in_front, attribute(white, bus), attribute(none, building), box2, box6).
+property(in, attribute(white, bus), attribute(blue, sky), box2, box7).
+property(on, attribute(none, car), attribute(red, bus), box0, box2).
+property(on, attribute(none, car), attribute(red, bus), box0, box2).
+property(on, attribute(white, car), attribute(none, road), box0, box3).
+property(has, attribute(none, car), attribute(none, wheel), box0, box4).
+property(has, attribute(none, car), attribute(none, window), box0, box5).
+property(in_front, attribute(white, bus), attribute(none, building), box2, box6).
+property(in_front, attribute(white, bus), attribute(blue, building), box2, box6).
+property(in, attribute(none, building), attribute(none, background), box6, box6).
+property(in, attribute(none, building), attribute(none, background), box6, box6).
+property(in_front, attribute(none, building), attribute(none, street), box6, box3).
+property(has, attribute(none, building), attribute(none, window), box6, box5).
+property(has, attribute(none, building), attribute(none, window), box6, box5).
+property(in, attribute(none, building), attribute(none, background), box6, box6).
+property(in, attribute(none, building), attribute(none, background), box6, box6).
+property(in, attribute(none, road), attribute(none, background), box3, box6).
+property(in, attribute(none, road), attribute(none, background), box3, box6).
+property(in_front, attribute(none, car), attribute(none, bus), box0, box2).
+property(has, attribute(none, car), attribute(none, wheel), box0, box1).
+property(has, attribute(none, car), attribute(none, window), box0, box5).
+property(in, attribute(none, road), attribute(none, background), box3, box6).
+property(has, attribute(none, road), attribute(white, clouds), box3, box6).
+property(on, attribute(none, tire), attribute(red, bus), box1, box7).
+property(on, attribute(none, window), attribute(none, bus), box5, box7).
+property(on, attribute(none, window), attribute(none, none), box5, box6).
+property(on, attribute(none, car), attribute(none, road), box0, box3).
+property(on, attribute(none, tire), attribute(none, front), box1, box4).
+property(in_front, attribute(none, car), attribute(none, building), box0, box6).
+property(on, attribute(none, window), attribute(white, building), box5, box6).
+property(on, attribute(none, window), attribute(white, bus), box5, box2).
+property(on, attribute(none, window), attribute(none, bus), box5, box2).
+property(on, attribute(none, window), attribute(none, none), box5, box6).
+property(on, attribute(none, car), attribute(none, road), box0, box3).
+property(on, attribute(none, window), attribute(none, car), box5, box0).
+property(on, attribute(none, window), attribute(none, none), box5, box6).
+property(on, attribute(none, window), attribute(white, building), box5, box6).
+property(in, attribute(none, clouds), attribute(none, sky), box7, box6).
+property(in, attribute(none, clouds), attribute(none, sky), box7, box6).
+property(has, attribute(none, sky), attribute(white, clouds), box6, box7).
+property(on, attribute(none, sky), attribute(none, road), box6, box3).
+property(in, attribute(none, clouds), attribute(none, sky), box7, box6).
+property(in_front, attribute(white, car), attribute(none, building), box0, box6).
+property(in, attribute(none, clouds), attribute(none, sky), box7, box6).
+property(in, attribute(none, clouds), attribute(none, sky), box7, box6).
+property(in, attribute(none, clouds), attribute(blue, sky), box7, box6).
+property(on, attribute(none, window), attribute(none, bus), box5, box3).
+property(on, attribute(none, building), attribute(none, road), box6, box3).
+property(in, attribute(none, trees), attribute(none, background), box7, box6).
+property(in_front, attribute(white, car), attribute(none, building), box0, box6).
+property(on, attribute(none, window), attribute(none, bus), box5, box2).
+property(box0, 36.5, 175, 361, 180).
+property(box1, 57.5, 201.5, 127, 127).
+property(box2, 441.5, 1.5, 279, 295).
+property(box3, 303.5, 180.5, 417, 220).
+property(box4, 249.5, 217.5, 127, 127).
+property(box5, 201.5, 169.5, 127, 127).
+property(box6, 1.5, 1.5, 625, 220).
+property(box7, 1.5, 1.5, 204, 399).

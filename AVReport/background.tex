@@ -1,0 +1,29 @@
+\section{Background}
+There are numerous research projects dedicated to visual question answering, but many of these projects rely heavily on machine learning. In our approach, we instead use a dense captioning model and commonsense reasoning to perform this task. Here we present some of the major concepts and previous works that are used to achieve this.
+
+\subsection{Commonsense Reasoning}
+When humans view an image, they are able to make reasonable assumptions about the objects they are looking at extremely quickly. Several logic statements are made using the regions presented in the image to derive new information. In this manner, people use commonsense reasoning to generate the knowledge needed to answer questions about an image. To answer questions about an image like a human would, we need to simulate the commonsense reasoning and knowledge that a human has about a particular scene. 
+
+To cover the visual question answering part of our logic model, we borrow concepts from AQuA\cite{inproceedings}. AQuA is a visual question answering framework that is capable of answering natural language questions about a picture. To relate objects and concepts that are similar, AQuA uses commonsense knowledge to define related attributes. AQuA performs this on simple 3D shapes, colors, and materials. However, this style of relating attribute information can be applied to pictures of real life scenes. 
+\begin{verbatim}
+is_property(car, vehicle).
+is_property(truck, vehicle).
+is_property(suv, vehicle).
+is_property(minivan, vehicle).
+is_property(van, vehicle).
+\end{verbatim}
+Defining the properties of objects and attributes as such allow us to create the commonsense knowledge needed to answer questions about a street or road. Our focus is on images of streets, particularly questions that can be used by an autonomous vehicle. We require commonsense reasoning about roads and street rules to improve our program's logic.
+
+We use ideas presented in AUTO-DISCERN to create the commonsense reasoning needed to answer questions about street images\cite{kothawade2021autodiscern}. The idea presented here is to take some information extracted from a computer vision model and apply that information into a set of logic rules that represent various factors on the road. The output will be an action that the driver should take given the information around them. 
+\begin{verbatim}
+select_action(change_lane_right, T):- 
+	\+obstruction_right(T).
+select_action(change_lane_left, T):- 
+	\+obstruction_left(T).
+\end{verbatim}
+We implement a simple interpretation of the 'select action' logic presented in AUTO-DISCERN. This sets up the commonsense reasoning needed to determine legal actions on the road. As stated before, AUTO-DISCERN requires a computer vision model to provide it with the visual information it needs. 
+
+\subsection{Dense Captioning}
+Computer vision is how programs represent the information within a picture as data and is largely handled with machine learning and deep learning models. In particular, image captioning is how these models can generate a natural language caption that represents the picture. To take this one step further, a new technique called dense captioning was proposed which generates natural language captions for multiple regions within an image. We require at least this much information to perform commonsense reasoning in a picture. This is because dense captioning gives us information of the objects within the picture, which allows us to reason over these objects. 
+
+The actual image captioning model used in this paper is Dense Relational Captioning\cite{kim2019dense}. This model improves upon the proposed dense captioning model by applying visual relationship detection. This gives us not only information about the objects being processed, but information about the relations between those objects. This is a very powerful addition to the knowledge base we are reasoning over, as it allows us to perform reasoning over the relationship of objects within a picture. For example, if we know that a fork is \emph{on top} of a plate and that the plate is \emph{on top} of a table, we can reason that the fork is \emph{on top} or \emph{above} the table. We can derive this information even if our Dense Relational Captioning model doesn't explicitly give it to us. For the autonomous vehicle concepts presented in this paper specifically, we will use this relational information to reason about the position of nearby objects on the road.

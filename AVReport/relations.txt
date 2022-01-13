@@ -1,0 +1,71 @@
+is_property(car, vehicle).
+is_property(truck, vehicle).
+is_property(suv, vehicle).
+is_property(minivan, vehicle).
+is_property(van, vehicle).
+is_property(ambulance, vehicle).
+is_property(bus, vehicle).
+is_property(motorcycle, vehicle).
+is_property(tractor, vehicle).
+is_property(train, vehicle).
+
+
+is_property(sedan, car).
+is_property(sports, car).
+is_property(coupe, car).
+is_property(station_wagon, car).
+is_property(hatchback, car).
+is_property(convertible, car).
+is_property(muscle_car, car).
+is_property(smart_car, car).
+is_property(taxi, car).
+is_property(police_car, car).
+is_property(hybrd_car, car).
+is_property(volkswagen_beetle,car).
+
+is_property(honda_accord, sedan).
+is_property(chevrolet_malibu, sedan).
+is_property(toyota_corolla, sedan).
+
+is_property(pickup_truck, truck).
+is_property(cement_truck, truck).
+is_property(fire_truck, truck).
+is_property(tow_truck, truck).
+is_property(semi_truck, truck).
+
+is_property(stop_sign,sign).
+is_property(yield_sign,sign).
+is_property(speed_limit_sign,sign).
+is_property(do_not_enter_sign,sign).
+is_property(no_parking_sign,sign).
+is_property(one_way_sign,sign).
+is_property(work_ahead_sign,sign).
+is_property(lane_ends_sign,sign).
+is_property(school_zone_sign,sign).
+
+is_property(red,color).
+is_property(blue,color).
+is_property(yellow,color).
+is_property(green,color).
+is_property(orange,color).
+is_property(purple,color).
+is_property(white,color).
+is_property(black,color).
+is_property(gray,color).
+is_property(cyan,color).
+
+is_part(window, vehicle).
+is_part(license_plate, vehicle).
+is_part(tire, vehicle).
+is_part(head_light, vehicle).
+is_part(bumper, vehicle).
+is_part(rear_light, vehicle).
+is_part(side_mirror, vehicle).
+is_part(door, vehicle).
+is_part(door_handle, vehicle).
+
+is_part2(window, V):-is_property(V,vehicle), V \= motorcycle.
+
+
+property(on, attribute(none, window), attribute(none, bus), box0, box2).
+property(box0, 36.5, 175, 361, 180).
